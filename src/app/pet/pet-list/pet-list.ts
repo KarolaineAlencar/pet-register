@@ -8,7 +8,7 @@ import { PetInterface, PetService } from '../../service/pet';
   templateUrl: './pet-list.html',
   styleUrl: './pet-list.css'
 })
-export class PetList implements OnInit{
+export class PetList implements OnInit {
   pets: PetInterface[] = [];
 
   constructor(private petService: PetService, private router: Router) {}

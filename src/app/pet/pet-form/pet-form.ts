@@ -42,11 +42,11 @@ export class PetForm implements OnInit {
 
       if (this.id) {
         this.petService.update(this.id, pet).subscribe(() => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/']); // volta para a lista
         });
       } else {
         this.petService.create(pet).subscribe(() => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/']); // volta para a lista
         });
       }
     }
